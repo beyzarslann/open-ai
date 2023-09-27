@@ -16,7 +16,7 @@ public class ChatController {
     }
 
     @PostMapping("/prompt")
-    public String chat(@RequestBody String name) {
-        return chatService.chat(name);
+    public String sendMessage(@RequestBody String message) {
+        return chatService.sendMessage(message);
     }
 }
